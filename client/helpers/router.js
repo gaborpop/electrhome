@@ -8,6 +8,9 @@ Router.map( function () {
   this.route('accueilTemplate', {
     path: '/'
   });
+  this.route('simulationTemplate', {
+    path: '/simulation'
+  });
   
   
 });

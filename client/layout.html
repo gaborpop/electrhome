@@ -1,8 +1,18 @@
 <template name="layout">
 	<div class="container">
-		<h1>Hello Morning 5 !</h1>
+		<div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="{{pathFor 'accueilTemplate'}}">Accueil</a></li>
+          <li><a href="#">A Propos</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <a href="{{pathFor 'accueilTemplate'}}" class="text-muted logoclass">ElectrHome</a>
+      </div>
+
+	
+	{{> yield}}
+	<div class="footer">
+        <p>&copy; Carrousel Studio 2014</p>
+      </div>
 	</div>	
-	{{yield}}
-	
-	
 </template>
