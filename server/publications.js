@@ -1,3 +1,3 @@
-Meteor.publish('tasks', function() {
-  return Tasks.find({userId: this.userId });
+Meteor.publish('devices', function() {
+  return Devices.find({userId: this.userId });
 });
