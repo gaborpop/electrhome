@@ -3,7 +3,11 @@
 		<div class="jumbotron">
         <h2>Simulez votre consommation électrique et faites des économies</h2>
         <p class="lead">En quelques cliques, renseignez votre consommation électrique et commencez à faire des économies sur votre facture électrique.</p>
+      {{#if currentUser}}
         <p><a class="btn btn-lg btn-success" href="{{pathFor 'simulationTemplate'}}" role="button">COMMENCER</a></p>
+      {{else}}
+        <p><a class="btn btn-lg btn-success" href="/sign-up" role="button">COMMENCER</a></p>
+      {{/if}}
       </div>
 
       

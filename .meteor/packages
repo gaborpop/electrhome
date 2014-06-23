@@ -10,3 +10,7 @@ insecure
 bootstrap-3
 iron-router
 jquery
+accounts-entry
+accounts-ui
+accounts-password
+coffeescript
