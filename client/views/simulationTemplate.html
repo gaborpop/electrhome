@@ -1,5 +1,55 @@
 <template name="simulationTemplate">
   <div class="container">
-    <h3>Commencer à visualiser votre consommation électrique</h3>
+    <h3>Commencer à visualiser votre consommation électrique</h3><br /><br />
+    <div class="row">
+      <div class="col-md-4 well">
+        <p>Valeurs usuelles : </p>
+        <p>Radiateur : 700 W, 1250 W, 1500 W</p>
+        <p>PC fixe : 500 W</p>
+        <p>Ampoule : 50 W</p>
+        <p>Machine à laver : 1000 W</p>
+        <p>Four : 1000 W</p>
+        <p>Plaque à induction : 2500 W</p>
+        <p>Sèche cheveux : 250 W</p>
+        <p>Micro-ondes : 1000 W</p>
+        
+      </div>
+      <div class="col-md-8">
+        <h4>Lister vos appareils ici pour estimer votre consommation annuelle :</h4><br /><br />
+          <div class="row form1">
+            <div class="col-md-5">
+                <select class="nom_device form-control" name="nom-device"> 
+                         <option value="valeur1">Ampoule</option> 
+                         <option value="valeur2">Four</option> 
+                         <option value="valeur3">Four à micro-onde</option> 
+                          <option value="valeur3">Plaque chauffante à induction</option> 
+                          <option value="valeur3">Plaque vitrocéramique</option> 
+                          <option value="valeur3">Radiateur électrique</option> 
+                          <option value="valeur3">Ordinateur de bureau</option> 
+                          <option value="valeur3">Ordinateur mobile</option> 
+                          <option value="valeur3">Télévision LCD</option> 
+                          <option value="valeur3">Télévision LED</option> 
+                        <option value="valeur3">Machine à laver</option>
+                        <option value="valeur3">Sèche-cheveux</option>
+                      </select> 
+            </div> 
+            <div class="col-md-3">
+        <input type="email" class="form-control puissance_device" placeholder="Puissance Watts">
+           </div> 
+            <div class="col-md-2">
+          <input type="email" class="form-control duree_device" placeholder="Durée h/j">
+              </div> 
+            <div class="col-md-2">
+          <button type="button" class="btn btn-danger">-</button>
+       </div> 
+        </div>
+        <br /><br />
+        <button type="button" class="btn btn-success ajouter_device">Ajouter</button>
+        <br /><br /><br /><br />
+        <button type="button" class="btn btn-success">Calculer</button>
+      </div>
+      
+    </div> 
+
   </div>
 </template>  
