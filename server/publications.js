@@ -1,3 +1,3 @@
 Meteor.publish('devices', function() {
-  return Devices.find({userId: this.userId });
+  return Devices.find();
 });

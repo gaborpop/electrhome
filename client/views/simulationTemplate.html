@@ -41,14 +41,37 @@
               </div> 
             
         </div>
-        <br /><br />
+        <br />
         <button type="button" class="btn btn-success ajouter_device">Ajouter</button>
-        <br /><br /><br /><br />
+        <br /><br />
+        <table class="table table-condensed table-hover">
+          <thead>
+            <tr>
+              <th>Produit</th>
+              <th>Puissance</th>
+              <th>Durée h/an</th>
+              <th>Coût EUR/an</th>
+            </tr>
+          </thead>
+        
+        
+        
+        
         {{#each devices}}
-        <span>{{ deviceName }} - {{ devicePuissance }} - {{ dureeDevice }} </span>
+            <tr>
+              <td>{{deviceName }}</td>
+              <td>{{ devicePuissance  }} W</td>
+              <td>{{ dureeDeviceAn }} h</td>
+              <td>{{ prixDeviceAn }} EUR</td>
+              <td><a href="" class="destroy"><span class="glyphicon glyphicon-remove"></span></a></td>
+            </tr>
+        
+        
         
         {{/each}}
-        <button type="button" class="btn btn-success">Calculer</button>
+      </table>      
+        <p class="well">Votre facture électrique annuelle est évaluée à : {{somme_conso}} EUR</p>
+        
       </div>
       
     </div> 

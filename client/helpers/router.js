@@ -1,6 +1,8 @@
 Router.configure({
 	layoutTemplate: 'layout',
-  
+  waitOn: function() { 
+    return Meteor.subscribe('devices');
+  }
 });
 
 Router.map( function () {
