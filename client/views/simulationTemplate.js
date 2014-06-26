@@ -1,4 +1,7 @@
- Template.simulationTemplate.helpers({
+
+
+
+Template.simulationTemplate.helpers({
     devices:  function () {
   	  
 		  return Devices.find({userId: this.userId });
